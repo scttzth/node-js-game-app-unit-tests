@@ -1,11 +1,18 @@
-const { generateRandomNumber } = require('./helpers/index');
+const { generateRandomNumber, getDate } = require('./helpers/index');
 
 class Game {
     constructor() {
-        this.gameId = generateRandomNumber();
+        this.id = generateRandomNumber();
+        this.date = getDate();
     }
-    getGameId() {
-        return this.gameId;
+    start() {
+        this.players = {
+            you: 'Player 1',
+            opponent: 'Player 2'
+        };
+    }
+    stop() {
+        this.players = {};
     }
 }
 
