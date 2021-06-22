@@ -16,7 +16,7 @@
     "codebuild"
   ],
   "author": "Thomas Scott (AWS)",
-  "license": "ISC",
+  "license": "MIT-0",
   "bugs": {
     "url": "https://github.com/scttzth/node-js-game-app-unit-tests/issues"
   },
